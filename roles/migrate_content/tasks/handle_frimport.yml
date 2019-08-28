@@ -19,7 +19,7 @@
   set_fact:
     basename: "{{ file['path']|basename }}"
     current: "ansible.module_utils.{{ item['key']  }}"
-    new: ".plugins.module_utils.{{ item['key'] }}"
+    new: "..module_utils.{{ item['key'] }}"
   when: frimports[item['key']] in ['y', 'Y']
 
 - name: "Update the import statements in {{ collection_parent }}/plugins/modules/{{ basename }}"
