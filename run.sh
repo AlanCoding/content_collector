@@ -30,7 +30,7 @@ ansible-galaxy collection build --output-path=~/Documents/repos/utility-playbook
 echo "Go back to where we started"
 cd ~/Documents/repos/content_collector
 echo "Running the install command now"
-ansible-galaxy collection install ~/Documents/repos/utility-playbooks/test_build/awx-awx-1.0.0.tar.gz -p ~/Documents/repos/utility-playbooks/test_install
+ansible-galaxy collection install ~/Documents/repos/utility-playbooks/test_build/awx-awx-0.0.1.tar.gz -p ~/Documents/repos/utility-playbooks/test_install
 echo "Now run a playbook to test the installed version"
 echo "This should not give the 'this_is_the_old_one' key in output"
 cd ~/Documents/repos/utility-playbooks
