@@ -1,11 +1,11 @@
 - hosts: localhost
   gather_facts: false
   vars:
-    ansible_source_directory: ./ansible-2.8.2
-    destination_directory: ~/my_ansible_collection
-    collection_namespace: contoso
-    collection_name: myos
-    source_sub_directory: /network/myos
+    ansible_source_directory: ./ansible
+    destination_directory: /Users/alancoding/Documents/repos/content_collector/awx_modules
+    collection_namespace: awx
+    collection_name: awx
+    source_sub_directory: /web_infrastructure/ansible_tower
   roles:
   - scaffold_directories
   - migrate_content
