@@ -6,6 +6,17 @@
     collection_namespace: awx
     collection_name: awx
     source_sub_directory: /web_infrastructure/ansible_tower
+    collection_description: 'Ansible modules that interact with the AWX API.'
+    collection_version: 0.0.1
+    collection_authors:
+      - "Wayne Witzel III (@wwitzel3)"
+      - "Chris Meyers <cmeyers@redhat.com>"
+    collection_license:
+      - "GPL-3.0-only"
+    collection_repository: 'https://github.com/ansible/awx'
+    collection_documentation: 'https://docs.ansible.com/ansible/latest/modules/list_of_web_infrastructure_modules.html#ansible-tower'
+    collection_homepage: 'https://ansible.com'
+    collection_issues: 'https://github.com/ansible/awx/issues'
   roles:
   - scaffold_directories
   - migrate_content
