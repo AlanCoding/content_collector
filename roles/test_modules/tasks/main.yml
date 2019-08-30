@@ -15,3 +15,8 @@
   loop_control:
     loop_var: file
     label: "{{ file['path']|basename }}"
+
+- name: Delete the symbolic link
+  file:
+    path: "~/.ansible/collections/ansible_collections/{{ collection_namespace }}"
+    state: absent
